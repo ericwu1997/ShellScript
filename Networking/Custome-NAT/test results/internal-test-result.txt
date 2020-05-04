@@ -1,0 +1,81 @@
+
+##########################################################################
+#                               Case 1					 #
+##########################################################################
+
+--- 192.168.0.5 hping statistic ---
+5 packets transmitted, 5 packets received, 0% packet loss
+round-trip min/avg/max = 1.0/1.3/1.6 ms
+HPING 192.168.0.5 (enp2s0 192.168.0.5): S set, 40 headers + 0 data bytes
+len=46 ip=192.168.0.5 ttl=63 DF id=0 sport=443 flags=RA seq=0 win=0 rtt=1.6 ms
+len=46 ip=192.168.0.5 ttl=63 DF id=0 sport=443 flags=RA seq=1 win=0 rtt=1.4 ms
+len=46 ip=192.168.0.5 ttl=63 DF id=0 sport=443 flags=RA seq=2 win=0 rtt=1.2 ms
+len=46 ip=192.168.0.5 ttl=63 DF id=0 sport=443 flags=RA seq=3 win=0 rtt=1.1 ms
+len=46 ip=192.168.0.5 ttl=63 DF id=0 sport=443 flags=RA seq=4 win=0 rtt=1.0 ms
+TCP Header Flag: SYN/ACK 
+
+Status: Passed
+
+##########################################################################
+#                               Case 2					 #
+##########################################################################
+
+--- 192.168.0.5 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.5 (enp2s0 192.168.0.5): udp mode set, 28 headers + 0 data bytes
+
+Status: Passed
+Please see the internal-test capture #2
+
+##########################################################################
+#                               Case 3					 #
+##########################################################################
+
+--- 192.168.0.5 hping statistic ---
+5 packets transmitted, 5 packets received, 0% packet loss
+round-trip min/avg/max = 1.3/1.5/1.8 ms
+HPING 192.168.0.5 (enp2s0 192.168.0.5): icmp mode set, 28 headers + 0 data bytes
+len=46 ip=192.168.0.5 ttl=63 id=15061 icmp_seq=0 rtt=1.8 ms
+len=46 ip=192.168.0.5 ttl=63 id=15977 icmp_seq=1 rtt=1.6 ms
+len=46 ip=192.168.0.5 ttl=63 id=16612 icmp_seq=2 rtt=1.5 ms
+len=46 ip=192.168.0.5 ttl=63 id=17293 icmp_seq=3 rtt=1.4 ms
+len=46 ip=192.168.0.5 ttl=63 id=17810 icmp_seq=4 rtt=1.3 ms
+
+Status: Passed
+Please see the internal-test capture #3
+
+##########################################################################
+#                               Case 4					 #
+##########################################################################
+
+--- 192.168.0.5 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.5 (enp2s0 192.168.0.5): S set, 40 headers + 0 data bytes
+Status: Passed
+
+--- 192.168.0.5 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.5 (enp2s0 192.168.0.5): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.5 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.5 (enp2s0 192.168.0.5): icmp mode set, 28 headers + 0 data bytes
+
+Status: Passed
+Please see the internal-test capture #4
+
+##########################################################################
+#                               Case 5					 #
+##########################################################################
+
+--- 192.168.0.5 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.5 (enp2s0 192.168.0.5): S set, 40 headers + 0 data bytes
+
+Status: Passed
+Please see the internal-test capture #5

@@ -1,0 +1,249 @@
+
+##########################################################################
+#                               Case 1					 #
+##########################################################################
+
+--- 192.168.0.11 hping statistic ---
+5 packets transmitted, 5 packets received, 0% packet loss
+round-trip min/avg/max = 1.1/1.4/1.7 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+len=46 ip=192.168.0.11 ttl=63 DF id=0 sport=443 flags=RA seq=0 win=0 rtt=1.7 ms
+len=46 ip=192.168.0.11 ttl=63 DF id=0 sport=443 flags=RA seq=1 win=0 rtt=1.5 ms
+len=46 ip=192.168.0.11 ttl=63 DF id=0 sport=443 flags=RA seq=2 win=0 rtt=1.4 ms
+len=46 ip=192.168.0.11 ttl=63 DF id=0 sport=443 flags=RA seq=3 win=0 rtt=1.2 ms
+len=46 ip=192.168.0.11 ttl=63 DF id=0 sport=443 flags=RA seq=4 win=0 rtt=1.1 ms
+TCP Header Flag: SYN/ACK 
+
+Status: Passed
+
+
+##########################################################################
+#                               Case 2					 #				 			 	 #
+##########################################################################
+
+--- 192.168.0.11 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+Status: Passed
+Please see the external-test capture #2
+
+##########################################################################
+#                               Case 3					 #
+##########################################################################
+
+--- 192.168.0.11 hping statistic ---
+5 packets transmitted, 5 packets received, 0% packet loss
+round-trip min/avg/max = 2.2/2.5/2.8 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): icmp mode set, 28 headers + 0 data bytes
+len=46 ip=192.168.0.11 ttl=63 id=56666 icmp_seq=0 rtt=2.8 ms
+len=46 ip=192.168.0.11 ttl=63 id=56742 icmp_seq=1 rtt=2.7 ms
+len=46 ip=192.168.0.11 ttl=63 id=57004 icmp_seq=2 rtt=2.5 ms
+len=46 ip=192.168.0.11 ttl=63 id=57427 icmp_seq=3 rtt=2.4 ms
+len=46 ip=192.168.0.11 ttl=63 id=58080 icmp_seq=4 rtt=2.2 ms
+
+Status: Passed
+Please see the external-test capture #3
+
+##########################################################################
+#                               Case 4					 #				 			 	 #
+##########################################################################
+
+--- 192.168.0.11 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): icmp mode set, 28 headers + 0 data bytes
+Status: Passed
+Please see the external-test capture #4
+##########################################################################
+#                               Case 5					 #
+##########################################################################
+
+Status: Passed
+
+##########################################################################
+#                               Case 6					 #
+##########################################################################
+
+--- 192.168.0.11 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+Status: Passed
+
+Please see the external-test capture #6
+
+##########################################################################
+#                               Case 7					 #
+##########################################################################
+
+--- 192.168.0.11 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+Status: Passed
+Please see the external-test capture #7
+
+##########################################################################
+#                               Case 8					 #
+##########################################################################
+
+Status: Passed
+
+##########################################################################
+#                               Case 9					 #
+##########################################################################
+
+--- 192.168.0.11 hping statistic ---
+5 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+Status: Passed
+Please see the external-test capture #9
+
+##########################################################################
+#                               Case 10					 #
+##########################################################################
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+Status: Passed
+
+
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+
+--- 192.168.0.11 hping statistic ---
+1 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.0.11 (eno1 192.168.0.11): S set, 40 headers + 0 data bytes
+Status: Passed
+Please see the external-test capture #10
